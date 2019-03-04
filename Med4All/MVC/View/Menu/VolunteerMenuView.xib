@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment version="4368" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="droidnaskh.ttf">
+            <string>DroidArabicNaskh</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MenuView" customModule="Med4All" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WVr-2q-fpw">
+                    <rect key="frame" x="0.0" y="637" width="375" height="30"/>
+                    <color key="backgroundColor" red="0.1764705882" green="0.34901960780000002" blue="0.62745098040000002" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <action selector="MenuView_btn_dismiss:" destination="iN0-l3-epB" eventType="touchUpInside" id="gfg-NF-FSJ"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w2D-Bl-K0w">
+                    <rect key="frame" x="50" y="0.0" width="325" height="667"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="أسم المستخدم" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="eEZ-Bx-2kH">
+                            <rect key="frame" x="5" y="28" width="315" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="KGR-YQ-BBW"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="DroidArabicNaskh" family="Droid Arabic Naskh" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الحي" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MOu-ZX-M7D">
+                            <rect key="frame" x="5" y="66" width="315" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="KVI-JN-OoB"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="DroidArabicNaskh" family="Droid Arabic Naskh" pointSize="17"/>
+                            <color key="textColor" red="0.68627450980000004" green="0.70196078429999997" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p0b-fu-tFx">
+                            <rect key="frame" x="5" y="614" width="315" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="8Bc-cE-5zk"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="DroidArabicNaskh" family="Droid Arabic Naskh" pointSize="17"/>
+                            <state key="normal" title="تسجيل خروج">
+                                <color key="titleColor" red="0.72156862749999995" green="0.72160983089999997" blue="0.72148138279999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="menuView_btn_logout:" destination="iN0-l3-epB" eventType="touchUpInside" id="nmR-zB-wS5"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aTW-Wg-GKg">
+                            <rect key="frame" x="5" y="146" width="315" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="p8Z-nW-0zh"/>
+                            </constraints>
+                            <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="11" maxY="0.0"/>
+                            <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
+                            <state key="normal" title="الملف الشخصي" image="profile">
+                                <color key="titleColor" red="0.1764705882" green="0.34901960780000002" blue="0.62745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="menuView_btn_userProfile:" destination="iN0-l3-epB" eventType="touchUpInside" id="WbI-2e-sMo"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xq2-aL-LI5">
+                            <rect key="frame" x="5" y="199" width="315" height="30"/>
+                            <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                            <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
+                            <state key="normal" title="قيد التنفيذ" image="goto">
+                                <color key="titleColor" red="0.1764705882" green="0.34901960780000002" blue="0.62745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="menuView_btn_GoTo:" destination="iN0-l3-epB" eventType="touchUpInside" id="L5S-qw-UkG"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vzR-dO-eBy">
+                            <rect key="frame" x="5" y="237" width="315" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="nDd-RV-ZSC"/>
+                            </constraints>
+                            <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="17" maxY="0.0"/>
+                            <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
+                            <state key="normal" title="المفضلة" image="fav">
+                                <color key="titleColor" red="0.1764705882" green="0.34901960780000002" blue="0.62745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="menuView_btn_favourit:" destination="iN0-l3-epB" eventType="touchUpInside" id="wHR-8E-lUs"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xjh-Oc-v8A">
+                            <rect key="frame" x="5" y="343" width="315" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="szU-Sn-dTp"/>
+                            </constraints>
+                            <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="18" maxY="0.0"/>
+                            <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
+                            <state key="normal" title="عن التطبيق" image="about">
+                                <color key="titleColor" red="0.1764705882" green="0.34901960780000002" blue="0.62745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="menuView_btn_aboutMed4All:" destination="iN0-l3-epB" eventType="touchUpInside" id="4q9-bQ-Gid"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u3A-Mx-jtA">
+                            <rect key="frame" x="5" y="290" width="315" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="c0j-su-Yqh"/>
+                            </constraints>
+                            <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="17" maxY="0.0"/>
+                            <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
+                            <state key="normal" title="الأرشيف" image="archive">
+                                <color key="titleColor" red="0.1764705882" green="0.34901960780000002" blue="0.62745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="menuView_btn_archive:" destination="iN0-l3-epB" eventType="touchUpInside" id="KAw-iR-6go"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.92156862750000001" green="0.95686274510000002" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="MOu-ZX-M7D" secondAttribute="trailing" constant="5" id="15a-pb-rnW"/>
+                        <constraint firstAttribute="trailing" secondItem="xjh-Oc-v8A" secondAttribute="trailing" constant="5" id="16D-3d-fpG"/>
+                        <constraint firstItem="u3A-Mx-jtA" firstAttribute="top" secondItem="vzR-dO-eBy" secondAttribute="bottom" constant="8" id="1Qc-Je-DeS"/>
+                        <constraint firstItem="MOu-ZX-M7D" firstAttribute="top" secondItem="eEZ-Bx-2kH" secondAttribute="bottom" constant="8" id="5YO-X9-2UI"/>
+                        <constraint firstAttribute="trailing" secondItem="eEZ-Bx-2kH" secondAttribute="trailing" constant="5" id="Dw9-1c-fTY"/>
+                        <constraint firstItem="aTW-Wg-GKg" firstAttribute="top" secondItem="MOu-ZX-M7D" secondAttribute="bottom" constant="50" id="FaP-W5-WuZ"/>
+                        <constraint firstItem="aTW-Wg-GKg" firstAttribute="leading" secondItem="w2D-Bl-K0w" secondAttribute="leading" constant="5" id="Hxl-kQ-Xob"/>
+                        <constraint firstItem="xjh-Oc-v8A" firstAttribute="top" secondItem="u3A-Mx-jtA" secondAttribute="bottom" constant="8" id="I3e-h1-l1z"/>
+                        <constraint firstItem="xjh-Oc-v8A" firstAttribute="leading" secondItem="w2D-Bl-K0w" secondAttribute="leading" constant="5" id="M3B-gY-qec"/>
+                        <constraint firstItem="u3A-Mx-jtA" firstAttribute="leading" secondItem="w2D-Bl-K0w" secondAttribute="leading" constant="5" id="PIY-J3-U0h"/>
+                        <constraint firstItem="eEZ-Bx-2kH" firstAttribute="top" secondItem="w2D-Bl-K0w" secondAttribute="top" constant="28" id="Pkl-2s-SP5"/>
+                        <constraint firstItem="vzR-dO-eBy" firstAttribute="leading" secondItem="w2D-Bl-K0w" secondAttribute="leading" constant="5" id="Qta-i1-al0"/>
+                        <constraint firstAttribute="trailing" secondItem="p0b-fu-tFx" secondAttribute="trailing" constant="5" id="Vev-Ni-oj9"/>
+                        <constraint firstAttribute="trailing" secondItem="u3A-Mx-jtA" secondAttribute="trailing" constant="5" id="Wpb-qo-F39"/>
+                        <constraint firstItem="xq2-aL-LI5" firstAttribute="top" secondItem="aTW-Wg-GKg" secondAttribute="bottom" constant="8" id="c4N-8I-ocV"/>
+                        <constraint firstAttribute="trailing" secondItem="aTW-Wg-GKg" secondAttribute="trailing" constant="5" id="elF-72-nAa"/>
+                        <constraint firstAttribute="trailing" secondItem="vzR-dO-eBy" secondAttribute="trailing" constant="5" id="hkK-zU-UcV"/>
+                        <constraint firstAttribute="trailing" secondItem="xq2-aL-LI5" secondAttribute="trailing" constant="5" id="i8u-Mm-CCu"/>
+                        <constraint firstItem="p0b-fu-tFx" firstAttribute="bottom" secondItem="w2D-Bl-K0w" secondAttribute="bottomMargin" id="kZV-hf-mjo"/>
+                        <constraint firstItem="vzR-dO-eBy" firstAttribute="top" secondItem="xq2-aL-LI5" secondAttribute="bottom" constant="8" id="neE-N2-xuS"/>
+                        <constraint firstItem="p0b-fu-tFx" firstAttribute="leading" secondItem="w2D-Bl-K0w" secondAttribute="leading" constant="5" id="tX3-2E-HDL"/>
+                        <constraint firstItem="eEZ-Bx-2kH" firstAttribute="leading" secondItem="w2D-Bl-K0w" secondAttribute="leading" constant="5" id="uhx-QL-HD8"/>
+                        <constraint firstItem="xq2-aL-LI5" firstAttribute="leading" secondItem="w2D-Bl-K0w" secondAttribute="leading" constant="5" id="zIJ-YV-tT9"/>
+                        <constraint firstItem="MOu-ZX-M7D" firstAttribute="leading" secondItem="w2D-Bl-K0w" secondAttribute="leading" constant="5" id="zrG-mZ-CMV"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="w2D-Bl-K0w" firstAttribute="trailing" secondItem="WVr-2q-fpw" secondAttribute="trailing" id="5Uk-HK-g5g"/>
+                <constraint firstItem="w2D-Bl-K0w" firstAttribute="bottom" secondItem="WVr-2q-fpw" secondAttribute="bottom" id="Y5O-QU-Pqi"/>
+                <constraint firstAttribute="bottom" secondItem="w2D-Bl-K0w" secondAttribute="bottom" id="auF-0U-YeM"/>
+                <constraint firstItem="WVr-2q-fpw" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="b21-HM-hRj"/>
+                <constraint firstAttribute="trailing" secondItem="w2D-Bl-K0w" secondAttribute="trailing" id="eWB-ze-ljM"/>
+                <constraint firstItem="w2D-Bl-K0w" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="elC-2f-WXu"/>
+                <constraint firstItem="w2D-Bl-K0w" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="50" id="krK-5E-ce2"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="2j8-ze-Wfx"/>
+            <connections>
+                <outlet property="menuViewConstrantWidthSize" destination="krK-5E-ce2" id="Qrz-I8-lMy"/>
+                <outlet property="menuView_lbl_area" destination="MOu-ZX-M7D" id="7LE-uA-P6M"/>
+                <outlet property="menuView_lbl_userName" destination="eEZ-Bx-2kH" id="MXm-cc-lOl"/>
+            </connections>
+            <point key="canvasLocation" x="-652.5" y="26.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="about" width="22" height="23"/>
+        <image name="archive" width="27" height="28"/>
+        <image name="fav" width="24" height="23"/>
+        <image name="goto" width="35" height="30"/>
+        <image name="profile" width="33" height="33"/>
+    </resources>
+</document>

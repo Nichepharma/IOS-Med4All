@@ -1,0 +1,62 @@
+/* 
+  notes.strings
+  Med4All
+
+  Created by Yahia El-Dow on 3/13/17.
+  Copyright © 2017 Yahia El-Dow. All rights reserved.
+*/
+
+
+// try and catch
+do {
+    //create json object from data
+    if let json = try JSONSerialization.jsonObject(with: data, options: .mutableContainers) as? [String: Any] {
+        print(json)
+        // handle json...
+    }
+
+} catch let error {
+    print(error.localizedDescription)
+}
+
+
+
+
+Creating a concurrent queue
+
+let concurrentQueue = DispatchQueue(label: "queuename", attributes: .concurrent)
+concurrentQueue.sync {
+
+}
+Create a serial queue
+
+let serialQueue = DispatchQueue(label: "queuename")
+serialQueue.sync {
+
+}
+Get main queue asynchronously
+
+DispatchQueue.main.async {
+
+}
+Get main queue synchronously
+
+DispatchQueue.main.sync {
+
+}
+To get one of the background thread
+
+DispatchQueue.global(attributes: .qosDefault).async {
+
+}
+Xcode 8.2 beta 2:
+
+To get one of the background thread
+
+DispatchQueue.global(qos: DispatchQoS.QoSClass.default).async {
+
+}
+
+DispatchQueue.global().async {
+// qos' default value is ´DispatchQoS.QoSClass.default`
+}

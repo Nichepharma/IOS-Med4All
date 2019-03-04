@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment version="4368" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="droidnaskh.ttf">
+            <string>DroidArabicNaskh</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MenuView" customModule="Med4All" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uI9-S5-6lP">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <connections>
+                        <action selector="MenuView_btn_dismiss:" destination="iN0-l3-epB" eventType="touchUpInside" id="X7P-t3-frw"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6rk-DB-fFP">
+                    <rect key="frame" x="50" y="0.0" width="325" height="667"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="أسم المستخدم" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="4if-bF-5VF">
+                            <rect key="frame" x="8" y="23" width="309" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="tEj-QG-4VP"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="DroidArabicNaskh" family="Droid Arabic Naskh" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QfG-D2-Pd7">
+                            <rect key="frame" x="8" y="171" width="309" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="dqO-nN-2qQ"/>
+                            </constraints>
+                            <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                            <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="14" maxY="0.0"/>
+                            <state key="normal" title="الملف الشخصي" image="profile">
+                                <color key="titleColor" red="0.1764705882" green="0.34901960780000002" blue="0.62745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="menuView_btn_userProfile:" destination="iN0-l3-epB" eventType="touchUpInside" id="B0w-oh-y7X"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WhC-IR-DvU">
+                            <rect key="frame" x="8" y="614" width="309" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="HbI-MT-yQg"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="DroidArabicNaskh" family="Droid Arabic Naskh" pointSize="17"/>
+                            <state key="normal" title="تسجيل خروج">
+                                <color key="titleColor" red="0.72156862749999995" green="0.72160983089999997" blue="0.72148138279999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="menuView_btn_logout:" destination="iN0-l3-epB" eventType="touchUpInside" id="EsW-1u-3q6"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الحي" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="UGy-aF-nCw">
+                            <rect key="frame" x="8" y="76" width="309" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="7ZC-qx-tZP"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="DroidArabicNaskh" family="Droid Arabic Naskh" pointSize="17"/>
+                            <color key="textColor" red="0.68627450980000004" green="0.70196078429999997" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EUs-11-daN">
+                            <rect key="frame" x="8" y="224" width="309" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="bjn-ec-8A7"/>
+                            </constraints>
+                            <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                            <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
+                            <state key="normal" title="الأرشيف" image="archive">
+                                <color key="titleColor" red="0.1764705882" green="0.34901960780000002" blue="0.62745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="menuView_btn_archive:" destination="iN0-l3-epB" eventType="touchUpInside" id="Dze-qc-HyF"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hy5-ft-JO0">
+                            <rect key="frame" x="8" y="277" width="309" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="6y7-XU-I8v"/>
+                            </constraints>
+                            <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                            <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
+                            <state key="normal" title="عن التطبيق" image="about">
+                                <color key="titleColor" red="0.1764705882" green="0.34901960780000002" blue="0.62745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="menuView_btn_aboutMed4All:" destination="iN0-l3-epB" eventType="touchUpInside" id="gxV-iN-tAZ"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.92156862750000001" green="0.95686274510000002" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="4if-bF-5VF" firstAttribute="top" secondItem="6rk-DB-fFP" secondAttribute="top" constant="23" id="2mt-rD-jU5"/>
+                        <constraint firstItem="4if-bF-5VF" firstAttribute="leading" secondItem="EUs-11-daN" secondAttribute="leading" id="4Hk-qV-7cK"/>
+                        <constraint firstItem="Hy5-ft-JO0" firstAttribute="leading" secondItem="6rk-DB-fFP" secondAttribute="leading" constant="8" id="4o9-Mm-fii"/>
+                        <constraint firstItem="UGy-aF-nCw" firstAttribute="top" secondItem="4if-bF-5VF" secondAttribute="bottom" constant="8" symbolic="YES" id="5vL-SZ-9Pd"/>
+                        <constraint firstItem="Hy5-ft-JO0" firstAttribute="top" secondItem="EUs-11-daN" secondAttribute="bottom" constant="8" id="D6u-sF-WCZ"/>
+                        <constraint firstItem="EUs-11-daN" firstAttribute="leading" secondItem="6rk-DB-fFP" secondAttribute="leading" constant="8" id="EHX-8c-WFt"/>
+                        <constraint firstItem="QfG-D2-Pd7" firstAttribute="leading" secondItem="6rk-DB-fFP" secondAttribute="leading" constant="8" id="H4W-Wu-hnK"/>
+                        <constraint firstItem="WhC-IR-DvU" firstAttribute="leading" secondItem="6rk-DB-fFP" secondAttribute="leading" constant="8" id="PRP-T0-fea"/>
+                        <constraint firstItem="QfG-D2-Pd7" firstAttribute="top" secondItem="UGy-aF-nCw" secondAttribute="bottom" constant="50" id="PS2-EP-fm2"/>
+                        <constraint firstItem="QfG-D2-Pd7" firstAttribute="leading" secondItem="6rk-DB-fFP" secondAttribute="leading" constant="8" id="Qif-WH-lO3"/>
+                        <constraint firstItem="EUs-11-daN" firstAttribute="trailing" secondItem="Hy5-ft-JO0" secondAttribute="trailing" id="Qsk-DR-ESH"/>
+                        <constraint firstItem="QfG-D2-Pd7" firstAttribute="trailing" secondItem="EUs-11-daN" secondAttribute="trailing" id="Szs-CQ-L0e"/>
+                        <constraint firstItem="UGy-aF-nCw" firstAttribute="leading" secondItem="6rk-DB-fFP" secondAttribute="leading" constant="8" id="TJq-wu-kKj"/>
+                        <constraint firstItem="EUs-11-daN" firstAttribute="top" secondItem="QfG-D2-Pd7" secondAttribute="bottom" constant="8" id="Tbj-Fn-XAK"/>
+                        <constraint firstItem="WhC-IR-DvU" firstAttribute="bottom" secondItem="6rk-DB-fFP" secondAttribute="bottomMargin" id="ZOc-yy-gkT"/>
+                        <constraint firstItem="EUs-11-daN" firstAttribute="top" secondItem="QfG-D2-Pd7" secondAttribute="bottom" constant="8" id="apX-ZR-5Is"/>
+                        <constraint firstAttribute="trailing" secondItem="EUs-11-daN" secondAttribute="trailing" constant="8" id="dtA-SE-j2C"/>
+                        <constraint firstItem="4if-bF-5VF" firstAttribute="trailing" secondItem="UGy-aF-nCw" secondAttribute="trailing" id="g53-Eb-BHM"/>
+                        <constraint firstAttribute="trailing" secondItem="QfG-D2-Pd7" secondAttribute="trailing" constant="8" id="jGB-xg-5If"/>
+                        <constraint firstItem="Hy5-ft-JO0" firstAttribute="top" secondItem="EUs-11-daN" secondAttribute="bottom" constant="8" symbolic="YES" id="khQ-wl-WX6"/>
+                        <constraint firstItem="4if-bF-5VF" firstAttribute="leading" secondItem="6rk-DB-fFP" secondAttribute="leadingMargin" id="pdR-7P-R42"/>
+                        <constraint firstAttribute="trailing" secondItem="WhC-IR-DvU" secondAttribute="trailing" constant="8" id="x8h-e3-UIi"/>
+                        <constraint firstItem="4if-bF-5VF" firstAttribute="trailing" secondItem="6rk-DB-fFP" secondAttribute="trailingMargin" id="xDw-fI-sGO"/>
+                        <constraint firstAttribute="trailing" secondItem="Hy5-ft-JO0" secondAttribute="trailing" constant="8" id="xIK-yB-Wh7"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.15194242294520549" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="uI9-S5-6lP" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="0gh-tC-D7j"/>
+                <constraint firstItem="6rk-DB-fFP" firstAttribute="top" secondItem="uI9-S5-6lP" secondAttribute="top" id="4PS-oN-CCN"/>
+                <constraint firstAttribute="trailing" secondItem="6rk-DB-fFP" secondAttribute="trailing" id="FWa-yU-Tsc"/>
+                <constraint firstItem="uI9-S5-6lP" firstAttribute="trailing" secondItem="6rk-DB-fFP" secondAttribute="trailing" id="eTh-2a-Tf2"/>
+                <constraint firstAttribute="bottom" secondItem="uI9-S5-6lP" secondAttribute="bottom" id="fYe-hK-7l2"/>
+                <constraint firstItem="6rk-DB-fFP" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="50" id="he0-Xp-cby"/>
+                <constraint firstItem="uI9-S5-6lP" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="p2b-H3-mLe"/>
+                <constraint firstItem="uI9-S5-6lP" firstAttribute="bottom" secondItem="6rk-DB-fFP" secondAttribute="bottom" id="tYa-DV-uQ6"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="4dX-1a-eC3"/>
+            <connections>
+                <outlet property="menuViewConstrantWidthSize" destination="he0-Xp-cby" id="gCA-4O-HGx"/>
+                <outlet property="menuView_lbl_area" destination="UGy-aF-nCw" id="sfb-bq-cNY"/>
+                <outlet property="menuView_lbl_userName" destination="4if-bF-5VF" id="7hV-D1-ySr"/>
+            </connections>
+            <point key="canvasLocation" x="456.5" y="131.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="about" width="22" height="23"/>
+        <image name="archive" width="27" height="28"/>
+        <image name="profile" width="33" height="33"/>
+    </resources>
+</document>

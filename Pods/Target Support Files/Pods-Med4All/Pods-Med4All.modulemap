@@ -1,0 +1,6 @@
+framework module Pods_Med4All {
+  umbrella header "Pods-Med4All-umbrella.h"
+
+  export *
+  module * { export * }
+}

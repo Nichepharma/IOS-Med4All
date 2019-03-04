@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="med_all_background" translatesAutoresizingMaskIntoConstraints="NO" id="AX0-82-Y5c">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoImage" translatesAutoresizingMaskIntoConstraints="NO" id="fmr-cO-CRa">
+                                <rect key="frame" x="100" y="28" width="174" height="86"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="AX0-82-Y5c" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="3gB-gs-Omf"/>
+                            <constraint firstItem="AX0-82-Y5c" firstAttribute="bottom" secondItem="xb3-aO-Qok" secondAttribute="top" id="IbL-el-Dlc"/>
+                            <constraint firstItem="fmr-cO-CRa" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="8" id="Ktw-fQ-bXa"/>
+                            <constraint firstItem="AX0-82-Y5c" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="VIq-sb-vbn"/>
+                            <constraint firstItem="fmr-cO-CRa" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="bA5-q4-lpb"/>
+                            <constraint firstItem="AX0-82-Y5c" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="exR-bA-WzL"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logoImage" width="174" height="86"/>
+        <image name="med_all_background" width="207" height="368"/>
+    </resources>
+</document>
